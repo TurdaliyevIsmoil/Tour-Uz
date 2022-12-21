@@ -1,101 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<title>Login V1</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<div class="login100-pic js-tilt" data-tilt>
-					<img src="images/Tour-Uz-Logo.svg" alt="IMG">
-				</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/combine/npm/@splidejs/splide@4.1.4/dist/css/splide-core.min.css,npm/@splidejs/splide@4.1.4/dist/css/themes/splide-skyblue.min.css"
+    />
+  </head>
+  <body>
+    <div
+      class="sticky top-0 w-screen h-12 bg-[#ffa] flex items-center justify-between px-5 py-2"
+    >
+      <img src="./images/Tour-Uz-Logo.svg" class="w-10" alt="" />
+      <h1>Tours Uzbekistan</h1>
+      <h2>Log out ></h2>
+    </div>
 
-				<form class="login100-form validate-form">
-					<span class="login100-form-title">
-						Member Login
-					</span>
+    <menu class="flex flex-col gap-3 fixed left-0 top-[50%] -translate-y-[50%]">
+      <a
+        href="#"
+        class="flex items-center justify-center p-3 shadow bg-gray-200 hover:bg-black cursor-pointer hover:text-white duration-150"
+        >Tours</a
+      >
+      <a
+        href="#"
+        class="flex items-center justify-center p-3 shadow bg-gray-200 hover:bg-black cursor-pointer hover:text-white duration-150"
+        >Loved</a
+      >
+      <a
+        href="#"
+        class="flex items-center justify-center p-3 shadow bg-gray-200 hover:bg-black cursor-pointer hover:text-white duration-150"
+        >Orders</a
+      >
+      <a
+        href="#"
+        class="flex items-center justify-center p-3 shadow bg-gray-200 hover:bg-black cursor-pointer hover:text-white duration-150"
+        >About</a
+      >
+      <a
+        href="#"
+        class="flex items-center justify-center p-3 shadow bg-gray-200 hover:bg-black cursor-pointer hover:text-white duration-150"
+        >Settings</a
+      >
+    </menu>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</span>
-					</div>
+    <main class="pl-32 mt-5 pr-5">
+      <h2 class="text-left text-xl">Tours of Uzbekistan</h2>
+      <p class="text-xs text-gray-400">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo sequi
+        corrupti quia voluptate quis inventore quam nisi quisquam perferendis
+        non. Tempora quia magnam maiores reiciendis, porro nobis nihil adipisci
+        saepe?
+      </p>
+      <br />
+      <br />
+      <section class="splide" aria-labelledby="carousel-heading">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide flex flex-col">
+              <img
+                src="https://www.w3schools.com/css/img_forest.jpg"
+                class="w-full aspect-[16/9] object-cover"
+                alt=""
+              />
+              <a>Hello world</a>
+              <p class="text-xs">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit debitis
+                nemo possimus nihil cum !
+              </p>
+            </li>
+            <li class="splide__slide flex flex-col">
+              <img
+                src="https://www.w3schools.com/css/img_forest.jpg"
+                class="w-full aspect-[16/9] object-cover"
+                alt=""
+              />
+              <a>Hello world</a>
+              <p class="text-xs">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit debitis
+                nemo possimus nihil cum !
+              </p>
+            </li>
+            <li class="splide__slide flex flex-col">
+              <img
+                src="https://www.w3schools.com/css/img_forest.jpg"
+                class="w-full aspect-[16/9] object-cover"
+                alt=""
+              />
+              <a>Hello world</a>
+              <p class="text-xs">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit debitis
+                nemo possimus nihil cum !
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
-						<span class="focus-input100"></span>
-						<span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
-					</div>
-					
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Login
-						</button>
-					</div>
-
-					<div class="text-center p-t-12">
-						<span class="txt1">
-							Forgot
-						</span>
-						<a class="txt2" href="#">
-							Username / Password?
-						</a>
-					</div>
-
-					<div class="text-center p-t-136">
-						<a class="txt2" href="register.html">
-							Create your Account
-							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-						</a>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-	
-	
-
-	
-<!--===============================================================================================-->	
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/tilt/tilt.jquery.min.js"></script>
-	<script >
-		$('.js-tilt').tilt({
-			scale: 1.1
-		})
-	</script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+      new Splide(".splide", {
+        type: "loop",
+        perPage: 3,
+        gap: "30px",
+      }).mount();
+    </script>
+  </body>
 </html>
